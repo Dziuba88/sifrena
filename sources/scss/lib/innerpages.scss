@@ -35,6 +35,16 @@
           font-weight: 500;
         }
       }
+
+      @include mobileOnly {
+        display: block;
+        margin-bottom: 30px;
+
+        &--image {
+          width: 100%;
+          margin: 0 0 15px;
+        }
+      }
     }
   }
 }
@@ -109,9 +119,13 @@
     }
 
     @include tabletDown {
+      padding: 0;
       &--image {
         order: unset !important;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
+      }
+      &--text {
+        padding: 10px 0;
       }
     }
   }
@@ -215,6 +229,24 @@
 
         svg, p {
           opacity: 1;
+        }
+      }
+    }
+
+    @include tabletDown {
+      display: block;
+      &--item {
+        width: 100%;
+        border-right: none !important;
+        border-bottom: 1px dashed #e4e4e4;
+        margin: 0 0 15px;
+        padding: 15px;
+
+        &:hover, &:last-child {
+          border-color: transparent;
+        }
+        &:last-child {
+          margin-bottom: 30px;
         }
       }
     }
@@ -368,6 +400,15 @@
           }
         }
       }
+
+      @include mobileOnly {
+        display: block;
+        text-align: center;
+
+        &--image {
+          margin: 0 auto 15px;
+        }
+      }
     }
 
     .gmnoprint, .gmnoscreen, img[src^="https://maps.gstatic.com/mapfiles/api-3/images/"] {
@@ -494,6 +535,12 @@
         opacity: 1;
       }
     }
+
+    @include tabletDown {
+      .gallery__thumbs {
+        margin-bottom: 20px;
+      }
+    }
   }
 
   &--text {
@@ -542,6 +589,9 @@
 
       .btn.blue {
         min-width: 160px;
+        @include mobileOnly {
+          width: 100%;
+        }
       }
     }
   }
@@ -582,6 +632,10 @@
             color: #333333;
           }
         }
+      }
+
+      @include mobileOnly {
+        padding: 10px;
       }
     }
   }

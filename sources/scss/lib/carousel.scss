@@ -144,6 +144,10 @@
         line-height: 55px;
         letter-spacing: 0.01em;
         padding: 10px 0;
+        @include mobileOnly {
+          font-size: 24px;
+          line-height: 37px;
+        }
       }
 
       &--readmore {
@@ -216,6 +220,7 @@
       margin-left: -13px;
       background: url(../img/mouse.png) no-repeat center center;
       animation: 1s fadeInOut linear infinite;
+      @include mobileOnly {display: none;}
     }
   }
 }

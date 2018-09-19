@@ -102,9 +102,12 @@ $(document).ready(function () {
 
   $('[data-toggle="active"]').click(function () {
     $(this).toggleClass('active')
-  })
+  });
 
-
+  $('.navbar--toggle').click(function () {
+    $(this).toggleClass('active');
+    $('.navbar--nav').toggleClass('open');
+  });
 
 
 });
