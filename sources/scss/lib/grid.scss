@@ -1,0 +1,74 @@
+.container {
+  margin: 0 auto;
+  padding: 0 $gutter;
+  box-sizing: border-box;
+  max-width: 100%;
+
+  @include tabletOnly {
+    width: $tablet;
+  }
+
+  @include mediumOnly {
+    width: $medium;
+  }
+
+  @include largeOnly {
+    width: $large;
+  }
+}
+
+.row {
+  margin: 0 ($gutter / -2);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.col {
+  display: block;
+  margin: 0;
+  padding: 0 ($gutter / 2);
+  width: 100%;
+  box-sizing: border-box;
+  $i: 1;
+  @while $i <= $columns {
+    $perc: unquote((100 / ($columns / $i)) + "%");
+    &.xs__#{$i} {
+      width: $perc;
+    }
+    $i: $i + 1;
+  }
+  @include tabletUp {
+    $i: 1;
+    @while $i <= $columns {
+      $perc: unquote((100 / ($columns / $i)) + "%");
+      &.sm__#{$i} {
+        width: $perc;
+      }
+      $i: $i + 1;
+    }
+  }
+  @include mediumUp {
+    $i: 1;
+    @while $i <= $columns {
+      $perc: unquote((100 / ($columns / $i)) + "%");
+      &.md__#{$i} {
+        width: $perc;
+      }
+      $i: $i + 1;
+    }
+  }
+  @include largeOnly {
+    $i: 1;
+    @while $i <= $columns {
+      $perc: unquote((100 / ($columns / $i)) + "%");
+      &.lg__#{$i} {
+        width: $perc;
+      }
+      $i: $i + 1;
+    }
+  }
+}

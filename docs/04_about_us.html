@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400,500|Roboto:300,400,500,700&amp;amp;subset=cyrillic"/>
+    <link rel="stylesheet" href="css/styles.min.css"/>
+  </head>
+  <body>
+    <header class="b__header">
+      <div class="b__header--top"><a href=""><img src="img/header_img.png" alt=""/></a></div>
+      <div class="b__header--topline">
+        <div class="container">
+          <div class="nav">
+            <ul class="nav__items">
+              <li class="nav__item"><a href="mailto:km@sifrena.com">km@sifrena.com</a></li>
+              <li class="nav__item dropdown right"><a data-toggle="dropdown"><img src="img/gb.png" alt=""/></a>
+                <div class="dropdown__menu">
+                  <ul>
+                    <li><a href=""><img src="img/ru.png" alt=""/><span>Русский</span></a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="b__header--navbar">
+        <div class="navbar">
+          <div class="container">
+            <div class="navbar__wraper">
+              <div class="navbar--brand"><a href=""><img src="img/logo.png" alt=""/></a></div>
+              <div class="navbar--separator"></div>
+              <div class="navbar--nav">
+                <ul class="menu">
+                  <li class="menu__item"><a class="menu__item--link" href="">About sifrena</a></li>
+                  <li class="menu__item dropdown left"><a class="menu__item--link" data-toggle="dropdown">Our signatures</a>
+                    <div class="dropdown__menu">
+                      <ul>
+                        <li><a href="">Megeve - french alpes</a></li>
+                        <li><a href="">Geneve</a></li>
+                        <li><a href="">Dubai</a></li>
+                        <li><a href="">Milano</a></li>
+                        <li><a href="">Chisinau</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="menu__item"><a class="menu__item--link" href="">Our hosts</a></li>
+                  <li class="menu__item"><a class="menu__item--link" href="">Our partners</a></li>
+                  <li class="menu__item"><a class="menu__item--link" href="">contacts</a></li>
+                </ul>
+              </div>
+              <div class="navbar--controls">
+                <button class="btn bronze" data-mfp-src="#request" data-mfp-type="inline"><span>write us</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mfp-hide popup__form" id="request">
+        <div class="popup__form--header">
+          <button data-mfp-close="">
+            <svg class="feather feather-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+          <h3>Send Request</h3>
+          <p>Send a request and we will contact you soon</p>
+        </div>
+        <div class="popup__form--body">
+          <div class="form--input"><span class="required">*</span>
+            <input type="text" placeholder="Name" name="name"/>
+          </div>
+          <div class="form--input"><span class="required">*</span>
+            <input type="tel" placeholder="Phone" name="phone"/>
+          </div>
+          <button class="btn block blue"><span>send</span></button>
+        </div>
+        <div class="popup__form--message error">
+          <svg class="colorized" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.4 430">
+            <path class="cls-1" d="M506.5 381.4L282.7 15.6A32.4 32.4 0 0 0 255 0 32.4 32.4 0 0 0 227 15.7L4.4 381.4a32.6 32.6 0 0 0-1 32.2A31.8 31.8 0 0 0 29.5 431l2.3.1h449.5a31.8 31.8 0 0 0 26.3-17.4 32.6 32.6 0 0 0-1.2-32.2zm-465.4 12L255 42.2l215 351.2H41zM255 118.9a18.8 18.8 0 0 0-18.8 18.8v156.7a18.8 18.8 0 1 0 37.6 0V137.7a18.8 18.8 0 0 0-18.8-18.8zm.3 209.5a18.8 18.8 0 1 1-18.8 18.8 18.8 18.8 0 0 1 18.8-18.8z"></path>
+          </svg><span class="colorized">&nbsp;&nbsp;&nbsp;Error:&nbsp;&nbsp;&nbsp;</span><span>the field "</span><span class="colorized">Name</span><span>" is emply or written incorrectly.</span>
+        </div>
+        <div class="popup__form--message error">
+          <svg class="colorized" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.4 430">
+            <path class="cls-1" d="M506.5 381.4L282.7 15.6A32.4 32.4 0 0 0 255 0 32.4 32.4 0 0 0 227 15.7L4.4 381.4a32.6 32.6 0 0 0-1 32.2A31.8 31.8 0 0 0 29.5 431l2.3.1h449.5a31.8 31.8 0 0 0 26.3-17.4 32.6 32.6 0 0 0-1.2-32.2zm-465.4 12L255 42.2l215 351.2H41zM255 118.9a18.8 18.8 0 0 0-18.8 18.8v156.7a18.8 18.8 0 1 0 37.6 0V137.7a18.8 18.8 0 0 0-18.8-18.8zm.3 209.5a18.8 18.8 0 1 1-18.8 18.8 18.8 18.8 0 0 1 18.8-18.8z"></path>
+          </svg><span class="colorized">&nbsp;&nbsp;&nbsp;Error:&nbsp;&nbsp;&nbsp;</span><span>the field "</span><span class="colorized">Phone</span><span>" is emply or written incorrectly.</span>
+        </div>
+      </div>
+    </header>
+    <main class="b__main">
+      <div class="page__header">
+        <div class="container">
+          <div class="page__header--row">
+            <h1>About us</h1>
+            <div class="breadcrumbs">
+              <ul>
+                <li><a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                      <path d="M16.8 9.6l-6.3-5.9a.8.8 0 0 0-.5-.2l-.5.2-6.3 5.9c-.2.1-.2.3-.2.4.1.2.3.2.4.2h.7v5.2c0 .6.5 1 1 1h3.2V13h3.1v3.6h3.3c.6 0 1-.5 1-1v-5.2h.7l.4-.2c.2-.3.2-.5 0-.6z"></path>
+                    </svg><span>Home</span></a></li>
+                <li><span>About us</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page__about">
+        <div class="container">
+          <div class="section__header">
+            <h2>About us</h2>
+            <svg class="section__header--decor" xmlns="http://www.w3.org/2000/svg" width="183" height="3">
+              <path d="M81 0h21v3H81z" fill="#81785d"></path>
+              <path d="M112 1h71v1h-71zM0 1h71v1H0z" fill="#ebebeb"></path>
+            </svg>
+            <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.<br>Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget.</p>
+          </div>
+          <div class="page__about--header"><img src="img/about_img_big.png" alt=""/></div>
+          <div class="page__about--body">
+            <div class="row">
+              <div class="col md__6">
+                <h3>What is sifrena?</h3>
+                <p><strong>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</strong> The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using '<a href="" class="text__danger"><strong>Content here</strong></a>, content here', making it look like readable English. <strong>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</strong> Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <strong>It has survived not only five centuries, but also the leap into.</strong></p>
+                <p> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like <a href="" class="text__danger"><strong>Aldus PageMaker</strong></a> including.</p>
+              </div>
+              <div class="col md__6"><img src="img/about_img_small.png" alt=""/></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="b__main--advantages">
+        <div class="container">
+          <div class="section__header">
+            <h2>Advantages</h2>
+            <svg class="section__header--decor" xmlns="http://www.w3.org/2000/svg" width="183" height="3">
+              <path d="M81 0h21v3H81z" fill="#81785d"></path>
+              <path d="M112 1h71v1h-71zM0 1h71v1H0z" fill="#ebebeb"></path>
+            </svg>
+            <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.<br>Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget.</p>
+          </div>
+          <div class="advantages__list">
+            <div class="advantages__list--item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 42">
+                <path d="M61.9 33.5a1.3 1.3 0 0 1-1.3 1.2h-2.5a1.3 1.3 0 1 1 0-2.5h1.3V15l-8.2-6.7H41.1v24h2.5a1.3 1.3 0 1 1 0 2.5H28.2a1.3 1.3 0 1 1 0-2.6h10.3V2.5H9v8a1.3 1.3 0 0 1-2.5 0V1.1A1.3 1.3 0 0 1 7.6 0h32.2A1.3 1.3 0 0 1 41 1.2v4.6h10.6a1.2 1.2 0 0 1 .8.3l9 7.4a1.3 1.3 0 0 1 .5 1zM21.7 12.7a1.3 1.3 0 1 1 0 2.5H6.4a1.3 1.3 0 1 1 0-2.5h15.3zm-1.3 7a1.3 1.3 0 0 1-1.3 1.3l-15.3-.1a1.3 1.3 0 1 1 0-2.5h15.4a1.2 1.2 0 0 1 1.2 1.3zm-2.6 5.7a1.3 1.3 0 0 1-1.2 1.3H1.3a1.3 1.3 0 1 1 0-2.5h15.3a1.3 1.3 0 0 1 1.2 1.2zM7.6 27.7A1.3 1.3 0 0 1 9 28.9v3.3h2.5a1.3 1.3 0 1 1 0 2.6H7.6a1.3 1.3 0 0 1-1.2-1.3V29a1.3 1.3 0 0 1 1.2-1.2zm12.3 3a5.6 5.6 0 0 1 0 11.3 5.8 5.8 0 0 1-4-1.7 5.5 5.5 0 0 1 0-8 5.7 5.7 0 0 1 4-1.6zm0 8.8a3.1 3.1 0 0 0 0-6.3 3.1 3.1 0 1 0 0 6.3zM55 24.4H44.8a1.3 1.3 0 0 1-1.2-1.3V12.8a1.3 1.3 0 0 1 1.2-1.2h6.5a1.2 1.2 0 0 1 .9.3l3.8 3.4a1.3 1.3 0 0 1 .4 1V23a1.3 1.3 0 0 1-1.3 1.3zm-1.3-7.6l-3-2.7h-4.7v7.8h7.7v-5.1zm-3.1 14a5.6 5.6 0 0 1 0 11.2 5.8 5.8 0 0 1-4-1.7 5.5 5.5 0 0 1 0-8 5.7 5.7 0 0 1 4-1.6zm0 8.7a3.1 3.1 0 0 0 0-6.3 3.1 3.1 0 1 0 0 6.3z"></path>
+              </svg>
+              <h4>Quick consultation</h4>
+              <p>Sifrena</p>
+            </div>
+            <div class="advantages__list--item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 61">
+                <path d="M49.4 61H5.6A5.8 5.8 0 0 1 0 55.4c0-3.9 2.7-5.1 9.9-8.2l5.6-2.5h.1l.1.1 2.3 1.9.2.1-.2.1-6.8 3.1C3.9 53.1 3 53.7 3 55.4A2.8 2.8 0 0 0 5.6 58h43.8a2.8 2.8 0 0 0 2.6-2.6c0-1.7-.9-2.3-8.1-5.4-1.9-.8-4.2-1.8-6.8-3.1l-.2-.1.2-.1 2.3-1.9.1-.1h.1l5.6 2.5c7.2 3.1 9.9 4.3 9.9 8.2a6 6 0 0 1-5.7 5.6zm-.5-27.4h-3.1a3 3 0 0 1-2.4-1.3c-2 8.7-8.3 15.1-15.9 15.1-7.4 0-13.7-6.1-15.8-14.4l-.3-.4c-.6.6-1.4 1-2.3 1h-3A3.1 3.1 0 0 1 3 30.5v-9.2c0-1.7 1.4-3 3-3.1h3.1a18.3 18.3 0 1 1 36.7.1h3.1c1.7 0 3.1 1.4 3.1 3v9.2c-.1 1.7-1.4 3.1-3.1 3.1zM9.2 21.4H6.1v9.2h3.1v-9.2zm5.3 10c1.9 1.5 7.7 3.7 13 3.7.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5a33 33 0 0 1-11.6-2.4c2.4 5.2 6.7 8.6 11.6 8.6C35 44.3 41 36.4 41 26.7S35 9.1 27.5 9.1 14 17 14 26.7c0 1.6.1 3.2.5 4.7zm13-28.3c-8.4 0-15.3 6.8-15.3 15.3v.4c2.5-7.4 8.4-12.6 15.2-12.6s12.7 5.2 15.2 12.6v-.4A15 15 0 0 0 27.5 3.1zm21.4 18.3h-3.1v9.2h3.1v-9.2z"></path>
+              </svg>
+              <h4>Professional host</h4>
+              <p>Sifrena</p>
+            </div>
+            <div class="advantages__list--item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 62">
+                <path d="M58.8 37.5l-4.4.7a24.4 24.4 0 0 1-1.7 4.3l2.6 3.6a3.8 3.8 0 0 1-.5 4.9L51 54.9a3.8 3.8 0 0 1-5 .4l-3.5-2.6a24.5 24.5 0 0 1-4.3 1.8l-.7 4.3a3.8 3.8 0 0 1-3.8 3.2h-5.4a3.8 3.8 0 0 1-3.8-3.2l-.7-4.3a24.2 24.2 0 0 1-4.1-1.7L16 55.4a3.8 3.8 0 0 1-4.9-.5l-3.9-3.8a3.8 3.8 0 0 1-.4-5l2.6-3.5a24 24 0 0 1-1.8-4.2l-4.4-.8A3.8 3.8 0 0 1 0 34v-5.5a3.8 3.8 0 0 1 3.2-3.8l4.3-.7a23.8 23.8 0 0 1 1.7-4.2L6.6 16a3.8 3.8 0 0 1 .4-5l4-3.8a3.8 3.8 0 0 1 2.6-1.1 3.8 3.8 0 0 1 2.3.7l3.5 2.6a24.2 24.2 0 0 1 4.2-1.8l.8-4.4A3.8 3.8 0 0 1 28.2 0h5.4a3.8 3.8 0 0 1 3.8 3.2l.7 4.3a24 24 0 0 1 4.4 1.8l3.6-2.6a3.8 3.8 0 0 1 5 .5l3.8 3.8a3.8 3.8 0 0 1 .4 5l-2.6 3.5a25.3 25.3 0 0 1 1.8 4.3l4.3.7a3.8 3.8 0 0 1 3.2 3.8v5.4a3.8 3.8 0 0 1-3.2 3.8zm-.3-9.2a.3.3 0 0 0-.2-.4l-5.5-.9a1.7 1.7 0 0 1-1.4-1.3 20.6 20.6 0 0 0-2.2-5.4 1.8 1.8 0 0 1 0-1.9l3.2-4.5a.3.3 0 0 0 0-.4l-3.9-3.9a.3.3 0 0 0-.2 0 .4.4 0 0 0-.2 0l-4.5 3.2a1.8 1.8 0 0 1-1.9 0 21 21 0 0 0-5.5-2.2 1.7 1.7 0 0 1-1.3-1.4l-1-5.4a.3.3 0 0 0-.3-.3h-5.4a.3.3 0 0 0-.4.3L27 9.3a1.8 1.8 0 0 1-1.3 1.4 20.5 20.5 0 0 0-5.4 2.2 1.8 1.8 0 0 1-1.9 0l-4.5-3.2a.3.3 0 0 0-.2-.1.3.3 0 0 0-.2.1l-3.9 3.9a.4.4 0 0 0 0 .4l3.2 4.5a1.7 1.7 0 0 1 .1 2 20.8 20.8 0 0 0-2.2 5.4 1.8 1.8 0 0 1-1.4 1.3l-5.4.9a.3.3 0 0 0-.3.3v5.5a.3.3 0 0 0 .3.3l5.5 1a1.8 1.8 0 0 1 1.4 1.2 20.5 20.5 0 0 0 2.2 5.4 1.8 1.8 0 0 1 0 2l-3.2 4.4a.3.3 0 0 0 0 .5l3.9 3.8a.3.3 0 0 0 .2.1.4.4 0 0 0 .2 0l4.5-3.3a1.7 1.7 0 0 1 1-.3 1.7 1.7 0 0 1 1 .2 21.5 21.5 0 0 0 5.2 2.2 1.7 1.7 0 0 1 1.3 1.4l1 5.4a.3.3 0 0 0 .3.3h5.4a.3.3 0 0 0 .4-.3l.9-5.4a1.7 1.7 0 0 1 1.3-1.4 21 21 0 0 0 5.4-2.2 1.8 1.8 0 0 1 1.9 0l4.5 3.2a.3.3 0 0 0 .2 0 .3.3 0 0 0 .2 0l3.9-3.9a.4.4 0 0 0 0-.4l-3.2-4.5a1.7 1.7 0 0 1 0-2 20.7 20.7 0 0 0 2.2-5.3 1.7 1.7 0 0 1 1.4-1.3l5.4-1a.3.3 0 0 0 .3-.3v-5.4zM31 44.3A13.4 13.4 0 1 1 44.4 31 13.4 13.4 0 0 1 31 44.4zm0-23.2A9.9 9.9 0 1 0 41 31 9.9 9.9 0 0 0 31 21z"></path>
+              </svg>
+              <h4>Reliability</h4>
+              <p>Sifrena</p>
+            </div>
+            <div class="advantages__list--item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 62">
+                <path d="M56.5 62h-48A8.4 8.4 0 0 1 0 53.6V30.2c0-.8.6-1.4 1.4-1.4h12.7V1.4c0-.8.6-1.4 1.4-1.4h48.1c.8 0 1.4.6 1.4 1.4v52.3c0 4.6-3.8 8.3-8.5 8.3zM14.1 31.6H2.8v22a5.7 5.7 0 1 0 11.4 0v-22zM62.2 2.8H16.9v50.9c0 2.1-.8 4.1-2.2 5.6h41.8c3.1 0 5.7-2.5 5.7-5.6V2.8zm-6.7 43.5H37.6c-.8 0-1.4-.6-1.4-1.4 0-.8.6-1.4 1.4-1.4h17.9c.8 0 1.4.6 1.4 1.4 0 .8-.6 1.4-1.4 1.4zm0-15.2H37.6c-.8 0-1.4-.6-1.4-1.4s.6-1.4 1.4-1.4h17.9c.8 0 1.4.6 1.4 1.4s-.6 1.4-1.4 1.4zm0-15.2H37.6c-.8 0-1.4-.6-1.4-1.4s.6-1.4 1.4-1.4h17.9c.8 0 1.4.6 1.4 1.4s-.6 1.4-1.4 1.4zm-28.7 1.6c-.3.3-.6.4-1 .4s-.7-.2-1-.4l-3.1-3.3c-.5-.5-.5-1.4 0-1.9.6-.5 1.4-.5 2 .1l2.1 2.2 6.7-7.2c.5-.6 1.4-.6 2-.1.6.5.6 1.4.1 1.9l-7.8 8.3zm-3.1 10.7l2.1 2.2 6.7-7.2c.5-.6 1.4-.6 2-.1.6.5.6 1.4.1 1.9l-7.7 8.3c-.3.3-.6.4-1 .4s-.7-.2-1-.4L21.8 30c-.5-.5-.5-1.4 0-1.9.4-.5 1.3-.5 1.9.1zm0 15.8l2.1 2.2 6.7-7.2c.5-.6 1.4-.6 2-.1.6.5.6 1.4.1 1.9l-7.7 8.3c-.3.3-.6.4-1 .4s-.7-.2-1-.4l-3.1-3.3c-.5-.6-.5-1.4.1-2 .3-.4 1.2-.3 1.8.2z"></path>
+              </svg>
+              <h4>Book on e-mai</h4>
+              <p>Sifrena</p>
+            </div>
+            <div class="advantages__list--item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63 61">
+                <path d="M62.9 47.1c-.2.5-.6.8-1.1.9l-10.5 1.4L50 59.8c-.1.5-.4.9-.9 1.1l-.4.1c-.4 0-.7-.1-.9-.4L34.9 47.9a5 5 0 0 1-6.8 0L15.3 60.6c-.3.3-.6.4-1 .4l-.4-.1c-.5-.2-.8-.6-.9-1.1l-1.4-10.5L1.2 48c-.5-.1-.9-.4-1.1-.9-.2-.5 0-1 .3-1.4l9.4-9.4a8.3 8.3 0 0 1-.2-3.5v-2.3c-.3-.7-.6-1.3-1.1-1.9a5.4 5.4 0 0 1-.3-7.6l.3-.3c.5-.6.9-1.2 1.1-1.9v-2.3c-.3-1.4-.1-2.9.5-4.2a6.9 6.9 0 0 1 3.4-2.5c.7-.3 1.4-.6 2-1.1.5-.6.8-1.3 1.1-2a6.1 6.1 0 0 1 2.5-3.4c.8-.4 1.6-.6 2.5-.6l1.7.1 1.5.1.8-.1c.7-.3 1.3-.6 1.9-1.1 2-2.2 5.4-2.3 7.6-.3l.3.3c.6.5 1.2.8 1.9 1.1l.8.1 1.5-.1 1.7-.1c.9 0 1.7.2 2.5.6 1.2.8 2.1 2 2.5 3.4a4.2 4.2 0 0 0 3.1 3.1c1.4.5 2.6 1.3 3.4 2.5.6 1.3.8 2.8.5 4.2v2.3c.3.7.6 1.3 1.1 1.9 2.2 2 2.3 5.4.3 7.6l-.3.3c-.5.6-.9 1.2-1.1 1.9v2.3c.2 1.2.1 2.4-.2 3.5l9.4 9.4c.5.4.6.9.4 1.4zM4.2 45.7l8.8 1.1c.6.1 1.1.6 1.2 1.2l1.2 8.8 10.4-10.4h-.1l-.8-.1-1.5.1-1.7.1c-.9 0-1.7-.2-2.5-.6a6.5 6.5 0 0 1-2.5-3.4c-.3-.7-.6-1.4-1.1-2-.6-.5-1.3-.8-2-1.1-.7-.3-1.4-.6-2-1.1l-7.4 7.4zm49.3-21.1c-.2-.9-.6-1.7-1.2-2.4a9.7 9.7 0 0 1-1.6-2.8c-.2-1.1-.2-2.2-.1-3.3.7-1.4 0-3.1-1.4-3.7l-.9-.3c-1-.4-2-.9-2.8-1.7a8.8 8.8 0 0 1-1.7-2.8c-.3-.8-.7-1.6-1.4-2.2-.4-.2-.7-.2-1.1-.2l-1.4.1-1.7.1-1.5-.2c-1-.3-2-.9-2.8-1.6a3 3 0 0 0-4.1-.7l-.7.7c-.8.7-1.8 1.2-2.8 1.6l-1.5.2-1.7-.1-1.4-.1-1.1.2c-.7.6-1.1 1.4-1.4 2.2a6.5 6.5 0 0 1-4.4 4.4c-.8.3-1.6.8-2.2 1.4-.3.8-.3 1.7-.1 2.6.2 1.1.2 2.2-.1 3.3-.3 1-.9 1.9-1.5 2.8a2.9 2.9 0 0 0 0 4.7c.7.8 1.2 1.8 1.5 2.8.2 1.1.2 2.2.1 3.3-.7 1.4 0 3.1 1.4 3.7l1 .3c1 .4 2 .9 2.8 1.7a10 10 0 0 1 1.7 2.8c.3.8.8 1.6 1.4 2.2.3.2.7.2 1.1.2l1.4-.1 1.7-.1 1.5.2c1 .3 2 .9 2.8 1.5a3 3 0 0 0 4.1.7l.7-.7c.8-.7 1.8-1.2 2.8-1.5l1.5-.2 1.7.1 1.4.1c.4 0 .8 0 1.1-.2.6-.6 1.1-1.4 1.4-2.2.4-1 .9-2 1.7-2.8a10 10 0 0 1 2.8-1.7 2.9 2.9 0 0 0 2.6-3c0-.3-.1-.7-.3-.9-.2-1.1-.2-2.2.1-3.3.3-1 .9-2 1.6-2.8a7 7 0 0 0 1-2.3zm-2 13.8l-2 1.1a4.2 4.2 0 0 0-3.1 3.1 6.6 6.6 0 0 1-2.5 3.4c-.8.4-1.6.6-2.5.6l-1.7-.1-1.5-.1-.8.1h-.1l10.4 10.4 1.1-8.8c.1-.6.6-1.1 1.2-1.2l8.8-1.1-7.3-7.4zm-12.3-10l1.6 8.1c.1.7-.4 1.4-1.1 1.6-.3.1-.6 0-.9-.1l-7.3-4-7.3 4-.7.2c-.3 0-.6-.1-.8-.3-.4-.3-.6-.8-.5-1.3l1.5-8.2-6.1-5.7c-.4-.4-.5-.9-.4-1.4.2-.5.6-.9 1.1-.9l8.2-1.1 3.6-7.5c.3-.7 1.1-1 1.8-.6.3.1.5.4.6.6l3.6 7.5 8.3 1.1c.7.1 1.3.8 1.2 1.5 0 .3-.2.6-.4.8l-6 5.7zm-4-6.5c-.5-.1-.9-.3-1.1-.8l-2.7-5.6-2.6 5.6c-.2.4-.6.7-1.1.8l-6.2.8 4.5 4.2c.3.3.5.8.4 1.2l-1.2 6.1 5.4-3c.4-.2.9-.2 1.3 0l5.4 3-1.2-6.1c-.1-.5.1-.9.4-1.2l4.5-4.2-5.8-.8z"></path>
+              </svg>
+              <h4>guarantee</h4>
+              <p>Sifrena</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="b__footer">
+      <div class="container">Copyright © Sifrena SA. All Rights Reserved.</div>
+    </footer>
+    <button class="to--top">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M20.6 14.4l-7.5-8c-.3-.2-.7-.4-1.1-.4-.4 0-.8.2-1 .5l-7.5 8c-.3.2-.5.6-.5 1s.1.8.4 1.1l.9.9c.5.6 1.4.6 2 .1l.1-.1 5.6-5.9 5.6 5.9c.3.3.6.5 1 .5s.8-.2 1.1-.5l.9-.9c.3-.3.4-.7.4-1.1 0-.4-.2-.8-.4-1.1z"></path>
+      </svg>
+    </button>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

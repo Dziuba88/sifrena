@@ -1,0 +1,98 @@
+extends layout
+
+block page
+  section.b__main--carousel
+    .owl-carousel: -for(i=1;i<=3;i++)
+      .item(data-plugin="img-to-bg", data-src="img/slider_img.png")
+        .container
+          .item__description
+            .item__description--intro SAVE UP TO 16% ON YOUR first booking
+            svg.item__description--decor(xmlns="http://www.w3.org/2000/svg" width="183" height="3")
+              path(d="M81 0h21v3H81z" fill="#81785d")
+              path(d="M112 1h71v1h-71zM0 1h71v1H0z" fill="rgba(255, 255, 255, .5)")
+            .item__description--title The best places to<br>establish yourself
+            .item__description--readmore: a.btn.outline__bronze(href=""): span read more
+  section.b__main--signatures
+    .container
+      .section__header
+        h2 discover our signatures
+        svg.section__header--decor(xmlns="http://www.w3.org/2000/svg" width="183" height="3")
+          path(d="M81 0h21v3H81z" fill="#81785d")
+          path(d="M112 1h71v1h-71zM0 1h71v1H0z" fill="#ebebeb")
+        p Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.<br>Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget.
+      .signatures__list
+        .row: -for(i=1;i<=6;i++)
+          .col.md__4.sm__6
+            a(href="", data-plugin="img-to-bg", data-src="img/signature_img.png").signatures__list--item
+              span.overlay
+                small Our best place to stay in
+                strong MEGEVE
+        .signatures__list--footer: a(href="").btn.bronze: span READ MORE
+  section.section__swiss
+    .container
+      img(src="img/swiss.png", alt="")
+      h2 Sifrena - tHE BEST real estate SERVICES!
+  section.section__hosts
+    .container
+      .section__hosts--wraper
+        img(src="img/hosts_img.png", alt="").image
+        .description
+          h2 our hosts
+          p ECATERINA AND GABRIEL MORTARA WILL HELP YOU TO CHOOSE THE BEST PLACE TO STAY!
+          .description__footer: a(href="").btn.outline__dark: span READ MORE
+  section.b__main--promotions
+    .container
+      .section__header
+        h2 Land promotions
+        svg.section__header--decor(xmlns="http://www.w3.org/2000/svg" width="183" height="3")
+          path(d="M81 0h21v3H81z" fill="#81785d")
+          path(d="M112 1h71v1h-71zM0 1h71v1H0z" fill="#ebebeb")
+        p Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.<br>Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget.
+    .promotions__list
+      .container
+        .row: -for(i=1;i<=3;i++)
+          .col.sm__4
+            a(data-mfp-src="#contact-us" data-mfp-type="inline", data-plugin="img-to-bg", data-src="img/signature_img.png").promotions__list--item
+              span.overlay
+                small Our best place to stay in
+                strong MEGEVE
+      #contact-us.mfp-hide.popup__form
+        .popup__form--header
+          button(data-mfp-close='')
+            svg.feather.feather-x(xmlns='http://www.w3.org/2000/svg', width='24', height='24', viewBox='0 0 24 24', fill='none', stroke='currentColor', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+              line(x1='18', y1='6', x2='6', y2='18')
+              line(x1='6', y1='6', x2='18', y2='18')
+          h3 Sifrena apartment
+          p Send a request and we will contact you soon
+        .popup__form--body
+          .form--input
+            span.required *
+            input(type="text", placeholder="Name", name="name")
+          .form--input
+            span.required *
+            input(type="tel", placeholder="Phone", name="phone")
+          .form--input
+            span.required *
+            input(type="email", placeholder="E-mail", name="e-mail")
+          button.btn.block.blue: span send
+        .popup__form--message.error
+          svg(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 511.4 430').colorized
+            path.cls-1(d='M506.5 381.4L282.7 15.6A32.4 32.4 0 0 0 255 0 32.4 32.4 0 0 0 227 15.7L4.4 381.4a32.6 32.6 0 0 0-1 32.2A31.8 31.8 0 0 0 29.5 431l2.3.1h449.5a31.8 31.8 0 0 0 26.3-17.4 32.6 32.6 0 0 0-1.2-32.2zm-465.4 12L255 42.2l215 351.2H41zM255 118.9a18.8 18.8 0 0 0-18.8 18.8v156.7a18.8 18.8 0 1 0 37.6 0V137.7a18.8 18.8 0 0 0-18.8-18.8zm.3 209.5a18.8 18.8 0 1 1-18.8 18.8 18.8 18.8 0 0 1 18.8-18.8z')
+          span.colorized &nbsp;&nbsp;&nbsp;Error:&nbsp;&nbsp;&nbsp;
+          span the field "
+          span.colorized Name
+          span " is emply or written incorrectly.
+        .popup__form--message.error
+          svg(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 511.4 430').colorized
+            path.cls-1(d='M506.5 381.4L282.7 15.6A32.4 32.4 0 0 0 255 0 32.4 32.4 0 0 0 227 15.7L4.4 381.4a32.6 32.6 0 0 0-1 32.2A31.8 31.8 0 0 0 29.5 431l2.3.1h449.5a31.8 31.8 0 0 0 26.3-17.4 32.6 32.6 0 0 0-1.2-32.2zm-465.4 12L255 42.2l215 351.2H41zM255 118.9a18.8 18.8 0 0 0-18.8 18.8v156.7a18.8 18.8 0 1 0 37.6 0V137.7a18.8 18.8 0 0 0-18.8-18.8zm.3 209.5a18.8 18.8 0 1 1-18.8 18.8 18.8 18.8 0 0 1 18.8-18.8z')
+          span.colorized &nbsp;&nbsp;&nbsp;Error:&nbsp;&nbsp;&nbsp;
+          span the field "
+          span.colorized Phone
+          span " is emply or written incorrectly.
+        .popup__form--message.error
+          svg(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 511.4 430').colorized
+            path.cls-1(d='M506.5 381.4L282.7 15.6A32.4 32.4 0 0 0 255 0 32.4 32.4 0 0 0 227 15.7L4.4 381.4a32.6 32.6 0 0 0-1 32.2A31.8 31.8 0 0 0 29.5 431l2.3.1h449.5a31.8 31.8 0 0 0 26.3-17.4 32.6 32.6 0 0 0-1.2-32.2zm-465.4 12L255 42.2l215 351.2H41zM255 118.9a18.8 18.8 0 0 0-18.8 18.8v156.7a18.8 18.8 0 1 0 37.6 0V137.7a18.8 18.8 0 0 0-18.8-18.8zm.3 209.5a18.8 18.8 0 1 1-18.8 18.8 18.8 18.8 0 0 1 18.8-18.8z')
+          span.colorized &nbsp;&nbsp;&nbsp;Error:&nbsp;&nbsp;&nbsp;
+          span the field "
+          span.colorized E-mail
+          span " is emply or written incorrectly.

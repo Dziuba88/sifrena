@@ -1,0 +1,86 @@
+// Media Query Ranges //
+  $small: 480px !default;
+  $tablet: 768px !default;
+  $medium: 980px !default;
+  $large: 1200px !default;
+
+// mobile screens ... ~ 480px
+  @mixin mobileOnly {
+    @media only screen and (max-width: #{$small}) {
+      @content;
+    }
+  }
+// small screens 481px-768px
+  @mixin smallOnly {
+    @media only screen and ( min-width: #{$small + 1} ) and (max-width: #{$tablet}) {
+      @content;
+    }
+  }
+
+  // screens 481px ~ ...
+  @mixin smallUp {
+    @media only screen and ( min-width: #{$small + 1} ) {
+      @content;
+    }
+  }
+
+  // screens ... ~ 768px
+  @mixin smallDown {
+    @media only screen and (max-width: #{$tablet}) {
+      @content;
+    }
+  }
+
+// tablet screens 769px-980px
+  @mixin tabletOnly {
+    @media only screen and ( min-width: #{$tablet + 1} ) and (max-width: #{$medium}) {
+      @content;
+    }
+  }
+
+  // screens 769px ~ ...
+  @mixin tabletUp {
+    @media only screen and ( min-width: #{$tablet + 1} ) {
+      @content;
+    }
+  }
+
+  // screens ... ~ 980px
+  @mixin tabletDown {
+    @media only screen and (max-width: #{$medium}) {
+      @content;
+    }
+  }
+// medium screens 981px-1200px
+  @mixin mediumOnly {
+    @media only screen and ( min-width: #{$medium + 1} ) and (max-width: #{$large}) {
+      @content;
+    }
+  }
+
+  // screens 981px ~ ...
+  @mixin mediumUp {
+    @media only screen and ( min-width: #{$medium + 1} ) {
+      @content;
+    }
+  }
+
+  // screens ... ~ 1200px
+  @mixin mediumDown {
+    @media only screen and (max-width: #{$large}) {
+      @content;
+    }
+  }
+// large screens 1201px ~ ...
+  @mixin largeOnly {
+    @media only screen and ( min-width: #{$large + 1} ) {
+      @content;
+    }
+  }
+
+// Grid System
+  $gutter: 30px !default;
+  $columns: 12 !default;
+// Fonts
+  $Oswald: 'Oswald', sans-serif !default;
+  $Roboto: 'Roboto', sans-serif !default;

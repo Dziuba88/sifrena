@@ -1,0 +1,39 @@
+.dropdown {
+  position: relative;
+
+  [data-toggle=dropdown] {
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__menu {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    overflow: hidden;
+    height: 0;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) .25s;
+
+    ul, ul li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  }
+
+  &.left &__menu {
+    left: 0;
+  }
+
+  &.right &__menu {
+    right: 0;
+  }
+
+  &.open &__menu {
+    opacity: 1;
+    top: 100%;
+    height: auto;
+  }
+}

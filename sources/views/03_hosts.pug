@@ -1,0 +1,40 @@
+extends layout
+
+block page
+  .page__header: .container: .page__header--row
+    h1 Our hosts
+    .breadcrumbs: ul
+      li: a(href="")
+        svg(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 20 20'): path(d='M16.8 9.6l-6.3-5.9a.8.8 0 0 0-.5-.2l-.5.2-6.3 5.9c-.2.1-.2.3-.2.4.1.2.3.2.4.2h.7v5.2c0 .6.5 1 1 1h3.2V13h3.1v3.6h3.3c.6 0 1-.5 1-1v-5.2h.7l.4-.2c.2-.3.2-.5 0-.6z')
+        span Home
+      li: span Our hosts
+  .page__hosts
+    .container
+      .section__header
+        h2 Our hosts
+        svg.section__header--decor(xmlns="http://www.w3.org/2000/svg" width="183" height="3")
+          path(d="M81 0h21v3H81z" fill="#81785d")
+          path(d="M112 1h71v1h-71zM0 1h71v1H0z" fill="#ebebeb")
+        p Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.<br>Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget.
+      .host__item: .row
+        .col.md__6.host__item--image: img(src="img/host_img_1.png", alt="")
+        .col.md__6
+          .host__item--text
+            h4 What is sifrena?
+            p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            ul
+              li Sifrena has been the industry's standard dummy text.
+              li It is a long established fact that a repeat reader.
+              li Sifrena, you need to be sure of text.
+              li Repetition, injected humour etc.
+      .host__item: .row
+        .col.md__6.host__item--image: img(src="img/host_img_2.png", alt="")
+        .col.md__6
+          .host__item--text
+            h4 Why do we use it?
+            p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            ul
+              li Sifrena has been the industry's standard dummy text.
+              li It is a long established fact that a repeat reader.
+              li Sifrena, you need to be sure of text.
+              li Repetition, injected humour etc.

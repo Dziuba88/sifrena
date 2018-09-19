@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400,500|Roboto:300,400,500,700&amp;amp;subset=cyrillic"/>
+    <link rel="stylesheet" href="css/styles.min.css"/>
+  </head>
+  <body>
+    <header class="b__header">
+      <div class="b__header--top"><a href=""><img src="img/header_img.png" alt=""/></a></div>
+      <div class="b__header--topline">
+        <div class="container">
+          <div class="nav">
+            <ul class="nav__items">
+              <li class="nav__item"><a href="mailto:km@sifrena.com">km@sifrena.com</a></li>
+              <li class="nav__item dropdown right"><a data-toggle="dropdown"><img src="img/gb.png" alt=""/></a>
+                <div class="dropdown__menu">
+                  <ul>
+                    <li><a href=""><img src="img/ru.png" alt=""/><span>Русский</span></a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="b__header--navbar">
+        <div class="navbar">
+          <div class="container">
+            <div class="navbar__wraper">
+              <div class="navbar--brand"><a href=""><img src="img/logo.png" alt=""/></a></div>
+              <div class="navbar--separator"></div>
+              <div class="navbar--nav">
+                <ul class="menu">
+                  <li class="menu__item"><a class="menu__item--link" href="">About sifrena</a></li>
+                  <li class="menu__item dropdown left"><a class="menu__item--link" data-toggle="dropdown">Our signatures</a>
+                    <div class="dropdown__menu">
+                      <ul>
+                        <li><a href="">Megeve - french alpes</a></li>
+                        <li><a href="">Geneve</a></li>
+                        <li><a href="">Dubai</a></li>
+                        <li><a href="">Milano</a></li>
+                        <li><a href="">Chisinau</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="menu__item"><a class="menu__item--link" href="">Our hosts</a></li>
+                  <li class="menu__item"><a class="menu__item--link" href="">Our partners</a></li>
+                  <li class="menu__item"><a class="menu__item--link" href="">contacts</a></li>
+                </ul>
+              </div>
+              <div class="navbar--controls">
+                <button class="btn bronze" data-mfp-src="#request" data-mfp-type="inline"><span>write us</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mfp-hide popup__form" id="request">
+        <div class="popup__form--header">
+          <button data-mfp-close="">
+            <svg class="feather feather-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+          <h3>Send Request</h3>
+          <p>Send a request and we will contact you soon</p>
+        </div>
+        <div class="popup__form--body">
+          <div class="form--input"><span class="required">*</span>
+            <input type="text" placeholder="Name" name="name"/>
+          </div>
+          <div class="form--input"><span class="required">*</span>
+            <input type="tel" placeholder="Phone" name="phone"/>
+          </div>
+          <button class="btn block blue"><span>send</span></button>
+        </div>
+        <div class="popup__form--message error">
+          <svg class="colorized" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.4 430">
+            <path class="cls-1" d="M506.5 381.4L282.7 15.6A32.4 32.4 0 0 0 255 0 32.4 32.4 0 0 0 227 15.7L4.4 381.4a32.6 32.6 0 0 0-1 32.2A31.8 31.8 0 0 0 29.5 431l2.3.1h449.5a31.8 31.8 0 0 0 26.3-17.4 32.6 32.6 0 0 0-1.2-32.2zm-465.4 12L255 42.2l215 351.2H41zM255 118.9a18.8 18.8 0 0 0-18.8 18.8v156.7a18.8 18.8 0 1 0 37.6 0V137.7a18.8 18.8 0 0 0-18.8-18.8zm.3 209.5a18.8 18.8 0 1 1-18.8 18.8 18.8 18.8 0 0 1 18.8-18.8z"></path>
+          </svg><span class="colorized">&nbsp;&nbsp;&nbsp;Error:&nbsp;&nbsp;&nbsp;</span><span>the field "</span><span class="colorized">Name</span><span>" is emply or written incorrectly.</span>
+        </div>
+        <div class="popup__form--message error">
+          <svg class="colorized" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.4 430">
+            <path class="cls-1" d="M506.5 381.4L282.7 15.6A32.4 32.4 0 0 0 255 0 32.4 32.4 0 0 0 227 15.7L4.4 381.4a32.6 32.6 0 0 0-1 32.2A31.8 31.8 0 0 0 29.5 431l2.3.1h449.5a31.8 31.8 0 0 0 26.3-17.4 32.6 32.6 0 0 0-1.2-32.2zm-465.4 12L255 42.2l215 351.2H41zM255 118.9a18.8 18.8 0 0 0-18.8 18.8v156.7a18.8 18.8 0 1 0 37.6 0V137.7a18.8 18.8 0 0 0-18.8-18.8zm.3 209.5a18.8 18.8 0 1 1-18.8 18.8 18.8 18.8 0 0 1 18.8-18.8z"></path>
+          </svg><span class="colorized">&nbsp;&nbsp;&nbsp;Error:&nbsp;&nbsp;&nbsp;</span><span>the field "</span><span class="colorized">Phone</span><span>" is emply or written incorrectly.</span>
+        </div>
+      </div>
+    </header>
+    <main class="b__main">
+      <div class="page__header">
+        <div class="container">
+          <div class="page__header--row">
+            <h1>Our partners</h1>
+            <div class="breadcrumbs">
+              <ul>
+                <li><a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                      <path d="M16.8 9.6l-6.3-5.9a.8.8 0 0 0-.5-.2l-.5.2-6.3 5.9c-.2.1-.2.3-.2.4.1.2.3.2.4.2h.7v5.2c0 .6.5 1 1 1h3.2V13h3.1v3.6h3.3c.6 0 1-.5 1-1v-5.2h.7l.4-.2c.2-.3.2-.5 0-.6z"></path>
+                    </svg><span>Home</span></a></li>
+                <li><span>Our partners</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page__partners">
+        <div class="container">
+          <div class="section__header">
+            <h2>Our partners</h2>
+            <svg class="section__header--decor" xmlns="http://www.w3.org/2000/svg" width="183" height="3">
+              <path d="M81 0h21v3H81z" fill="#81785d"></path>
+              <path d="M112 1h71v1h-71zM0 1h71v1H0z" fill="#ebebeb"></path>
+            </svg>
+            <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.<br>Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget.</p>
+          </div>
+          <div class="page__partners--list">
+            <div class="row">
+              <div class="col md__6">
+                <div class="partner__item">
+                  <div class="partner__item--image"><img src="img/partner_img.png" alt=""/></div>
+                  <div class="partner__item--text">
+                    <h4>INgrad</h4>
+                    <p><strong>Lorem Ipsum is simply</strong> dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col md__6">
+                <div class="partner__item">
+                  <div class="partner__item--image"><img src="img/partner_img.png" alt=""/></div>
+                  <div class="partner__item--text">
+                    <h4>INgrad</h4>
+                    <p><strong>Lorem Ipsum is simply</strong> dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col md__6">
+                <div class="partner__item">
+                  <div class="partner__item--image"><img src="img/partner_img.png" alt=""/></div>
+                  <div class="partner__item--text">
+                    <h4>INgrad</h4>
+                    <p><strong>Lorem Ipsum is simply</strong> dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col md__6">
+                <div class="partner__item">
+                  <div class="partner__item--image"><img src="img/partner_img.png" alt=""/></div>
+                  <div class="partner__item--text">
+                    <h4>INgrad</h4>
+                    <p><strong>Lorem Ipsum is simply</strong> dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col md__6">
+                <div class="partner__item">
+                  <div class="partner__item--image"><img src="img/partner_img.png" alt=""/></div>
+                  <div class="partner__item--text">
+                    <h4>INgrad</h4>
+                    <p><strong>Lorem Ipsum is simply</strong> dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col md__6">
+                <div class="partner__item">
+                  <div class="partner__item--image"><img src="img/partner_img.png" alt=""/></div>
+                  <div class="partner__item--text">
+                    <h4>INgrad</h4>
+                    <p><strong>Lorem Ipsum is simply</strong> dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col md__6">
+                <div class="partner__item">
+                  <div class="partner__item--image"><img src="img/partner_img.png" alt=""/></div>
+                  <div class="partner__item--text">
+                    <h4>INgrad</h4>
+                    <p><strong>Lorem Ipsum is simply</strong> dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col md__6">
+                <div class="partner__item">
+                  <div class="partner__item--image"><img src="img/partner_img.png" alt=""/></div>
+                  <div class="partner__item--text">
+                    <h4>INgrad</h4>
+                    <p><strong>Lorem Ipsum is simply</strong> dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col md__6">
+                <div class="partner__item">
+                  <div class="partner__item--image"><img src="img/partner_img.png" alt=""/></div>
+                  <div class="partner__item--text">
+                    <h4>INgrad</h4>
+                    <p><strong>Lorem Ipsum is simply</strong> dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col md__6">
+                <div class="partner__item">
+                  <div class="partner__item--image"><img src="img/partner_img.png" alt=""/></div>
+                  <div class="partner__item--text">
+                    <h4>INgrad</h4>
+                    <p><strong>Lorem Ipsum is simply</strong> dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col md__6">
+                <div class="partner__item">
+                  <div class="partner__item--image"><img src="img/partner_img.png" alt=""/></div>
+                  <div class="partner__item--text">
+                    <h4>INgrad</h4>
+                    <p><strong>Lorem Ipsum is simply</strong> dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col md__6">
+                <div class="partner__item">
+                  <div class="partner__item--image"><img src="img/partner_img.png" alt=""/></div>
+                  <div class="partner__item--text">
+                    <h4>INgrad</h4>
+                    <p><strong>Lorem Ipsum is simply</strong> dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="b__footer">
+      <div class="container">Copyright © Sifrena SA. All Rights Reserved.</div>
+    </footer>
+    <button class="to--top">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M20.6 14.4l-7.5-8c-.3-.2-.7-.4-1.1-.4-.4 0-.8.2-1 .5l-7.5 8c-.3.2-.5.6-.5 1s.1.8.4 1.1l.9.9c.5.6 1.4.6 2 .1l.1-.1 5.6-5.9 5.6 5.9c.3.3.6.5 1 .5s.8-.2 1.1-.5l.9-.9c.3-.3.4-.7.4-1.1 0-.4-.2-.8-.4-1.1z"></path>
+      </svg>
+    </button>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

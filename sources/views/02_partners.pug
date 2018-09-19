@@ -1,0 +1,25 @@
+extends layout
+
+block page
+  .page__header: .container: .page__header--row
+    h1 Our partners
+    .breadcrumbs: ul
+      li: a(href="")
+        svg(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 20 20'): path(d='M16.8 9.6l-6.3-5.9a.8.8 0 0 0-.5-.2l-.5.2-6.3 5.9c-.2.1-.2.3-.2.4.1.2.3.2.4.2h.7v5.2c0 .6.5 1 1 1h3.2V13h3.1v3.6h3.3c.6 0 1-.5 1-1v-5.2h.7l.4-.2c.2-.3.2-.5 0-.6z')
+        span Home
+      li: span Our partners
+  .page__partners
+    .container
+      .section__header
+        h2 Our partners
+        svg.section__header--decor(xmlns="http://www.w3.org/2000/svg" width="183" height="3")
+          path(d="M81 0h21v3H81z" fill="#81785d")
+          path(d="M112 1h71v1h-71zM0 1h71v1H0z" fill="#ebebeb")
+        p Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.<br>Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget.
+      .page__partners--list
+        .row: -for(i=1;i<=12;i++)
+          .col.md__6: .partner__item
+            .partner__item--image: img(src="img/partner_img.png", alt="")
+            .partner__item--text
+              h4 INgrad
+              p <strong>Lorem Ipsum is simply</strong> dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.
