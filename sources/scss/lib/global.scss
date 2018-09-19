@@ -87,6 +87,27 @@ a, button {
     }
   }
 
+  &.see__more {
+    color: #ffffff;
+    background-color: #002c50;
+    font-family: $Oswald;
+    font-weight: 400;
+    display: flex;
+    padding: 0 20px;
+
+    &:hover {
+      background-color: #333333;
+    }
+
+    svg {
+      display: block;
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+      margin-left: 15px;
+    }
+  }
+
 
   &.outline__bronze {
     color: #ffffff;
@@ -362,8 +383,8 @@ a, button {
               width: 20px;
               height: 20px;
               fill: currentColor;
-              vertical-align: bottom;
               margin-right: 5px;
+              margin-bottom: 2px;
             }
 
             span {
@@ -377,3 +398,68 @@ a, button {
   }
 }
 
+.pagination {
+  padding-top: 30px;
+  font-family: $Oswald;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: 500px;
+  text-transform: uppercase;
+  text-align: center;
+
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      flex: 1;
+      list-style: none;
+      display: block;
+
+      a {
+        display: block;
+        padding: 20px 0;
+        border-top: 3px solid #ebebeb;
+        color: #888888;
+
+        &:hover, &.active {
+          border-top: 3px solid #81785d;
+          color: #002c50
+        }
+      }
+
+      &:first-child, &:last-child {
+        flex: none;
+
+        a {
+          display: flex;
+          align-items: center;
+
+          span, svg {
+            display: block;
+            margin: 0;
+            padding: 0;
+            line-height: 1;
+          }
+
+          svg {
+            width: 9px;
+            height: 9px;
+            fill: currentColor;
+          }
+        }
+      }
+
+      &:first-child a {
+        padding-right: 15px;
+        svg {margin-right: 5px;}
+      }
+      &:last-child a {
+        padding-left: 15px;
+        svg {margin-left: 5px;}
+      }
+    }
+  }
+}

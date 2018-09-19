@@ -51,4 +51,60 @@ $(document).ready(function () {
     $.magnificPopup.close();
   });
 
+  if ($('#map').length) {
+    var map_location = [46.9893432, 28.8584635];
+    var small_map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 16,
+      center: new google.maps.LatLng(map_location[0], map_location[1]),
+      disableDefaultUI: true
+    });
+    small_map_marker = new google.maps.Marker({
+      position: new google.maps.LatLng(map_location[0], map_location[1]),
+      map: small_map,
+      icon: {
+        url: "img/marker.png",
+        scaledSize: new google.maps.Size(23, 33)
+      }
+    });
+    small_map.addListener('center_changed', function () {
+      window.setTimeout(function () {
+        small_map.panTo(small_map_marker.getPosition());
+      }, 100);
+    });
+  };
+
+  function baseName(str) {
+    var base = new String(str).substring(str.lastIndexOf('/') + 1);
+    if (base.lastIndexOf(".") != -1)
+      base = base.substring(0, base.lastIndexOf("."));
+    return base;
+
+    ///<span>' + baseName(item.src) +'</span>
+  }
+  $('[data-popup=gallery]').magnificPopup({
+    delegate: 'a.thumb',
+    type: 'image',
+    tLoading: 'Loading image #%curr%...',
+    mainClass: 'mfp-img-mobile',
+    gallery: {enabled: true,navigateByImgClick: false},
+    callbacks: {
+      buildControls: function () {
+        this.contentContainer.append(this.arrowLeft.add(this.arrowRight));
+      },
+    },
+    image: {
+      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+      titleSrc: function(item) {
+        return item.el.attr('title') + '<small>Image by Sifrena</small>';
+      }
+    }
+  });
+
+  $('[data-toggle="active"]').click(function () {
+    $(this).toggleClass('active')
+  })
+
+
+
+
 });

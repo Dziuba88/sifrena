@@ -1,0 +1,53 @@
+extends layout
+
+block page
+  .page__header: .container: .page__header--row
+    h1 Contacts
+    .breadcrumbs: ul
+      li: a(href="")
+        svg(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 20 20'): path(d='M16.8 9.6l-6.3-5.9a.8.8 0 0 0-.5-.2l-.5.2-6.3 5.9c-.2.1-.2.3-.2.4.1.2.3.2.4.2h.7v5.2c0 .6.5 1 1 1h3.2V13h3.1v3.6h3.3c.6 0 1-.5 1-1v-5.2h.7l.4-.2c.2-.3.2-.5 0-.6z')
+        span Home
+      li: span Contacts
+  .page__contacts
+    .container
+      .section__header
+        h2 quality is a priority for us
+        svg.section__header--decor(xmlns="http://www.w3.org/2000/svg" width="183" height="3")
+          path(d="M81 0h21v3H81z" fill="#81785d")
+          path(d="M112 1h71v1h-71zM0 1h71v1H0z" fill="#ebebeb")
+        p Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.<br>Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget.
+      .page__contacts--header: img(src="img/about_img_big.png", alt="")
+      .page__contacts--support
+        .section__header
+          h2 support client
+          svg.section__header--decor(xmlns="http://www.w3.org/2000/svg" width="183" height="3")
+            path(d="M81 0h21v3H81z" fill="#81785d")
+            path(d="M112 1h71v1h-71zM0 1h71v1H0z" fill="#ebebeb")
+          p Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.<br>Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget.
+        .row
+          .col.md__6
+            .support__contact
+              .support__contact--image: img(src="img/contact_avatar_1.png", alt="")
+              .support__contact--text
+                h4 <span>Frank</span>, sales manager
+                a(href="mailto:frank_franklin@gmail.com")
+                  .icon: svg(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 14 14'): path(d='M11.5 2.5h-9C1.7 2.5 1 3.2 1 4v6c0 .8.7 1.4 1.5 1.4h9.1c.8 0 1.5-.6 1.5-1.4V4c-.1-.8-.8-1.5-1.6-1.5zm.8 7.5c0 .4-.4.8-.8.8h-9a.9.9 0 0 1-.8-.8V4c0-.4.4-.8.8-.8h9.1c.4 0 .8.3.8.8l-.1 6zM8.6 6.9l2.9-2.6v-.5H11L7 7.4l-.8-.7-.1-.1L3 3.9h-.5c-.1.1-.1.3 0 .4l3 2.6-3 2.7v.5l.2.1.2-.1 3-2.8.8.7.3.2.2-.1.8-.7 3 2.8.2.1c.2 0 .3-.1.3-.3l-.1-.2-2.8-2.9z')
+                  span frank_franklin@gmail.com
+            .support__contact
+              .support__contact--image: img(src="img/contact_avatar_2.png", alt="")
+              .support__contact--text
+                h4 <span>Helena</span>, marketing manager
+                a(href="mailto:helen_kosinzeana@gmail.com")
+                  .icon: svg(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 14 14'): path(d='M11.5 2.5h-9C1.7 2.5 1 3.2 1 4v6c0 .8.7 1.4 1.5 1.4h9.1c.8 0 1.5-.6 1.5-1.4V4c-.1-.8-.8-1.5-1.6-1.5zm.8 7.5c0 .4-.4.8-.8.8h-9a.9.9 0 0 1-.8-.8V4c0-.4.4-.8.8-.8h9.1c.4 0 .8.3.8.8l-.1 6zM8.6 6.9l2.9-2.6v-.5H11L7 7.4l-.8-.7-.1-.1L3 3.9h-.5c-.1.1-.1.3 0 .4l3 2.6-3 2.7v.5l.2.1.2-.1 3-2.8.8.7.3.2.2-.1.8-.7 3 2.8.2.1c.2 0 .3-.1.3-.3l-.1-.2-2.8-2.9z')
+                  span helen_kosinzeana@gmail.com
+          .col.md__6
+            .support__map
+              #map
+              script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLa52E3EJeehDidU_gDBx4B4NMzh01hiY")
+
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+extends layout
+
+block page
+  .page__header: .container: .page__header--row
+    h1 Our Signatures
+    .breadcrumbs: ul
+      li: a(href="")
+        svg(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 20 20'): path(d='M16.8 9.6l-6.3-5.9a.8.8 0 0 0-.5-.2l-.5.2-6.3 5.9c-.2.1-.2.3-.2.4.1.2.3.2.4.2h.7v5.2c0 .6.5 1 1 1h3.2V13h3.1v3.6h3.3c.6 0 1-.5 1-1v-5.2h.7l.4-.2c.2-.3.2-.5 0-.6z')
+        span Home
+      li: span Our Signatures
+  .page__signatures
+    .container
+      .section__header
+        h2 Our Signatures
+        svg.section__header--decor(xmlns="http://www.w3.org/2000/svg" width="183" height="3")
+          path(d="M81 0h21v3H81z" fill="#81785d")
+          path(d="M112 1h71v1h-71zM0 1h71v1H0z" fill="#ebebeb")
+        p Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.<br>Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget.
+      .page__signatures--list: -for(i=1;i<=4;i++)
+        .signature__item
+          h2 Sefrena apartments
+          p <strong>Lorem Ipsum is simply dummy text</strong> of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever <strong>since the 1500s</strong>, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <strong>It has survived not only five centuries</strong>, but also the leap into electronic typesetting, remaining essentially unchanged.
+          .signature__item--gallery: .row: -for(y=1;y<=4;y++)
+            .col.xs__6.md__3: img(src="img/signature_img_"+y+".png", alt="")
+          .signature__item--footer
+            .decor
+            a(href="").btn.see__more
+              span see more
+              svg(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 21 14.8')
+                path(d='M14.1.2c-.3-.3-.7-.3-1.1 0-.3.3-.3.7 0 1.1l5.4 5.4H.8c-.5-.1-.8.3-.8.7 0 .4.3.7.7.8h17.7L13 13.5c-.3.3-.3.8 0 1.1.3.3.8.3 1 0L20.6 8c.3-.3.3-.7 0-1L14.1.2z')
+      .pagination: ul
+        li: a(href="")
+          svg(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 5 9'): path(d='M4.4 0l.6.6-3.8 3.9L5 8.4l-.6.6L0 4.5 4.4 0z')
+          span back
+        li: a(href=""): span 1
+        li: a(href="").active: span 2
+        li: a(href=""): span 3
+        li: a(href=""): span 4
+        li: a(href="")
+          span next
+          svg(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 5 9'): path(d='M.6 0L0 .6l3.8 3.9L0 8.4l.6.6L5 4.5.6 0z')

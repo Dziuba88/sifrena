@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400,500|Roboto:300,400,500,700&amp;amp;subset=cyrillic"/>
+    <link rel="stylesheet" href="css/styles.min.css"/>
+  </head>
+  <body>
+    <header class="b__header">
+      <div class="b__header--top"><a href=""><img src="img/header_img.png" alt=""/></a></div>
+      <div class="b__header--topline">
+        <div class="container">
+          <div class="nav">
+            <ul class="nav__items">
+              <li class="nav__item"><a href="mailto:km@sifrena.com">km@sifrena.com</a></li>
+              <li class="nav__item dropdown right"><a data-toggle="dropdown"><img src="img/gb.png" alt=""/></a>
+                <div class="dropdown__menu">
+                  <ul>
+                    <li><a href=""><img src="img/ru.png" alt=""/><span>Русский</span></a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="b__header--navbar">
+        <div class="navbar">
+          <div class="container">
+            <div class="navbar__wraper">
+              <div class="navbar--brand"><a href=""><img src="img/logo.png" alt=""/></a></div>
+              <div class="navbar--separator"></div>
+              <div class="navbar--nav">
+                <ul class="menu">
+                  <li class="menu__item"><a class="menu__item--link" href="">About sifrena</a></li>
+                  <li class="menu__item dropdown left"><a class="menu__item--link" data-toggle="dropdown">Our signatures</a>
+                    <div class="dropdown__menu">
+                      <ul>
+                        <li><a href="">Megeve - french alpes</a></li>
+                        <li><a href="">Geneve</a></li>
+                        <li><a href="">Dubai</a></li>
+                        <li><a href="">Milano</a></li>
+                        <li><a href="">Chisinau</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="menu__item"><a class="menu__item--link" href="">Our hosts</a></li>
+                  <li class="menu__item"><a class="menu__item--link" href="">Our partners</a></li>
+                  <li class="menu__item"><a class="menu__item--link" href="">contacts</a></li>
+                </ul>
+              </div>
+              <div class="navbar--controls">
+                <button class="btn bronze" data-mfp-src="#request" data-mfp-type="inline"><span>write us</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mfp-hide popup__form" id="request">
+        <div class="popup__form--header">
+          <button data-mfp-close="">
+            <svg class="feather feather-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+          <h3>Send Request</h3>
+          <p>Send a request and we will contact you soon</p>
+        </div>
+        <div class="popup__form--body">
+          <div class="form--input"><span class="required">*</span>
+            <input type="text" placeholder="Name" name="name"/>
+          </div>
+          <div class="form--input"><span class="required">*</span>
+            <input type="tel" placeholder="Phone" name="phone"/>
+          </div>
+          <button class="btn block blue"><span>send</span></button>
+        </div>
+        <div class="popup__form--message error">
+          <svg class="colorized" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.4 430">
+            <path class="cls-1" d="M506.5 381.4L282.7 15.6A32.4 32.4 0 0 0 255 0 32.4 32.4 0 0 0 227 15.7L4.4 381.4a32.6 32.6 0 0 0-1 32.2A31.8 31.8 0 0 0 29.5 431l2.3.1h449.5a31.8 31.8 0 0 0 26.3-17.4 32.6 32.6 0 0 0-1.2-32.2zm-465.4 12L255 42.2l215 351.2H41zM255 118.9a18.8 18.8 0 0 0-18.8 18.8v156.7a18.8 18.8 0 1 0 37.6 0V137.7a18.8 18.8 0 0 0-18.8-18.8zm.3 209.5a18.8 18.8 0 1 1-18.8 18.8 18.8 18.8 0 0 1 18.8-18.8z"></path>
+          </svg><span class="colorized">&nbsp;&nbsp;&nbsp;Error:&nbsp;&nbsp;&nbsp;</span><span>the field "</span><span class="colorized">Name</span><span>" is emply or written incorrectly.</span>
+        </div>
+        <div class="popup__form--message error">
+          <svg class="colorized" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.4 430">
+            <path class="cls-1" d="M506.5 381.4L282.7 15.6A32.4 32.4 0 0 0 255 0 32.4 32.4 0 0 0 227 15.7L4.4 381.4a32.6 32.6 0 0 0-1 32.2A31.8 31.8 0 0 0 29.5 431l2.3.1h449.5a31.8 31.8 0 0 0 26.3-17.4 32.6 32.6 0 0 0-1.2-32.2zm-465.4 12L255 42.2l215 351.2H41zM255 118.9a18.8 18.8 0 0 0-18.8 18.8v156.7a18.8 18.8 0 1 0 37.6 0V137.7a18.8 18.8 0 0 0-18.8-18.8zm.3 209.5a18.8 18.8 0 1 1-18.8 18.8 18.8 18.8 0 0 1 18.8-18.8z"></path>
+          </svg><span class="colorized">&nbsp;&nbsp;&nbsp;Error:&nbsp;&nbsp;&nbsp;</span><span>the field "</span><span class="colorized">Phone</span><span>" is emply or written incorrectly.</span>
+        </div>
+      </div>
+    </header>
+    <main class="b__main">
+      <div class="page__header">
+        <div class="container">
+          <div class="page__header--row">
+            <h1>Jeneva apartment</h1>
+            <div class="breadcrumbs">
+              <ul>
+                <li><a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                      <path d="M16.8 9.6l-6.3-5.9a.8.8 0 0 0-.5-.2l-.5.2-6.3 5.9c-.2.1-.2.3-.2.4.1.2.3.2.4.2h.7v5.2c0 .6.5 1 1 1h3.2V13h3.1v3.6h3.3c.6 0 1-.5 1-1v-5.2h.7l.4-.2c.2-.3.2-.5 0-.6z"></path>
+                    </svg><span>Home</span></a></li>
+                <li><span>Jeneva apartment</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page__apartment">
+        <div class="container">
+          <div class="row">
+            <div class="col md__6">
+              <div class="page__apartment--gallery" data-popup="gallery">
+                <div class="gallery__main"><a class="thumb" href="img/IMG_01.jpg" title="Jeneva apartment" data-plugin="img-to-bg" data-src="img/IMG_01.jpg">
+                    <div class="overlay">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                        <path d="M17.6 8h-3.2v6.4H8v3.2h6.4V24h3.2v-6.4H24v-3.2h-6.4V8zM16 0C7.2 0 0 7.2 0 16s7.2 16 16 16h12.8c1.8 0 3.2-1.4 3.2-3.2V16A16 16 0 0 0 16 0zm0 28.8C8.9 28.8 3.2 23.1 3.2 16 3.2 8.9 8.9 3.2 16 3.2S28.8 8.9 28.8 16c0 7.1-5.7 12.8-12.8 12.8z"></path>
+                      </svg>
+                    </div></a>
+                  <div class="gallery__main--footer">
+                    <button class="control" data-toggle="active">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 25">
+                        <path d="M24.7 9.2c-.6-.6-1.5-.9-2.3-.9h-5.6v-4c.1-1.4-.4-2.7-1.5-3.6a4.6 4.6 0 0 0-3.8-.5c-.3.1-.4.3-.4.6v4.5c0 1.5-.8 2.9-2.1 3.7-.7.5-1.4.9-2.2 1.1h-.2c-.2-.3-.7-.6-1.1-.6H1.3c-.7 0-1.3.6-1.3 1.4V23c0 .7.6 1.3 1.3 1.3h4.2c.4 0 .8-.2 1-.5.7.8 1.6 1.2 2.6 1.2h11.1c2.5 0 4-1.3 4.3-3.5l1.4-8.9c.3-1.3-.2-2.5-1.2-3.4zM5.5 23s0 .1 0 0H1.3V10.9h4.2V23zm19.2-10.6l-1.4 8.9c-.2 1.6-1.2 2.4-3 2.4H9.1c-1.1 0-2.1-.8-2.3-2V11.5l.3-.1a9 9 0 0 0 2.6-1.3 6 6 0 0 0 2.7-4.8v-4c.8-.2 1.5 0 2.2.4.7.7 1.1 1.6 1 2.6V9c0 .4.3.6.6.6h6.3c.5 0 1.1.2 1.5.6.5.5.8 1.4.7 2.2z"></path>
+                      </svg>
+                    </button>
+                    <button class="control" data-toggle="active">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 25">
+                        <path d="M24 7.9l-6.3-.5-.3-.2L15 1.3C14.6.2 13.3-.3 12.2.1A2 2 0 0 0 11 1.3l-2.4 6-.3.2L2 8C.8 8-.1 9.1 0 10.3c0 .6.3 1.1.7 1.5l4.9 4.1.1.3-1.5 6.2c-.3 1.1.3 2.3 1.4 2.6h.7a2 2 0 0 0 1.1-.3l5.4-3.4c.1-.1.3-.1.4 0l5.4 3.3c.3.2.7.3 1.1.3a2 2 0 0 0 1.6-.8c.4-.5.6-1.2.4-1.8l-1.5-6.2.1-.3 5-4.1a2 2 0 0 0 .6-2.3c-.3-.8-1-1.4-1.9-1.5zm.5 2.8l-5 4.1c-.5.4-.7 1.1-.6 1.7l1.5 6.2c.1.3 0 .5-.2.7-.1.2-.4.3-.6.3l-.4-.2-5.4-3.4c-.3-.2-.6-.2-.9-.2l-.9.3-5.4 3.4c-.3.2-.8.1-1-.2a.6.6 0 0 1-.1-.7L7 16.5c.1-.6-.1-1.3-.6-1.7l-4.9-4.1a.7.7 0 0 1-.2-.9c.1-.3.4-.5.7-.6l6.3-.5c.6 0 1.2-.4 1.4-1l2.4-5.9c.2-.4.6-.6 1.1-.5.2.1.4.2.5.5l2.4 5.9c.2.6.8 1 1.4 1l6.5.6c.3 0 .6.2.7.6.1.2 0 .6-.2.8z"></path>
+                      </svg>
+                    </button>
+                    <button class="control" data-toggle="active">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+                        <path d="M24.6.1a.7.7 0 0 0-.8-.4l-.3.2C22.2 1.4 19.2 2 16 2.5c-5.8 1-13 2.3-13.9 10.4-.3 2.4.3 4.8 1.7 6.7C2 21.3.8 23.3 0 25.4c-.1.3.1.7.4.8.3.1.7-.1.8-.4.8-1.9 1.8-3.6 3.3-5.1 2.1 2.4 5.3 3.7 8.8 3.7 4.3 0 7.6-1.6 9.9-4.8 4-5.9 3-15.1 1.4-19.5zm-2.5 18.7c-1.9 2.8-4.9 4.2-8.8 4.2-3.2 0-6-1.2-7.9-3.3 1.7-1.5 3.6-2.5 5.4-3.2l.3-.1c2.9-1 5.4-1.2 6.3-1 .4.1.7-.1.8-.5.1-.4-.1-.7-.5-.8l-1.9-.1c2.4-1.6 4.2-3.6 5.3-6.1.2-.3 0-.7-.3-.9-.3-.2-.7 0-.9.3-1.7 3.5-4.7 6-9.2 7.7.7-1.6.9-3.5 0-5.3-.2-.3-.6-.5-.9-.3-.3.2-.5.6-.3.9 1.2 2.3 0 4.6-1 5.7-1.4.7-2.8 1.6-4 2.6A8.4 8.4 0 0 1 3.2 13c.9-7 7-8.1 12.9-9.2a19 19 0 0 0 7.5-2.3c1.4 4.5 2 12.3-1.5 17.3z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="gallery__thumbs">
+                  <div class="gallery__thumbs--item"><a class="thumb" href="img/IMG_02.jpg" title="Jeneva apartment" data-plugin="img-to-bg" data-src="img/IMG_02.jpg">
+                      <div class="overlay">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                          <path d="M17.6 8h-3.2v6.4H8v3.2h6.4V24h3.2v-6.4H24v-3.2h-6.4V8zM16 0C7.2 0 0 7.2 0 16s7.2 16 16 16h12.8c1.8 0 3.2-1.4 3.2-3.2V16A16 16 0 0 0 16 0zm0 28.8C8.9 28.8 3.2 23.1 3.2 16 3.2 8.9 8.9 3.2 16 3.2S28.8 8.9 28.8 16c0 7.1-5.7 12.8-12.8 12.8z"></path>
+                        </svg>
+                      </div></a></div>
+                  <div class="gallery__thumbs--item"><a class="thumb" href="img/IMG_03.jpg" title="Jeneva apartment" data-plugin="img-to-bg" data-src="img/IMG_03.jpg">
+                      <div class="overlay">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                          <path d="M17.6 8h-3.2v6.4H8v3.2h6.4V24h3.2v-6.4H24v-3.2h-6.4V8zM16 0C7.2 0 0 7.2 0 16s7.2 16 16 16h12.8c1.8 0 3.2-1.4 3.2-3.2V16A16 16 0 0 0 16 0zm0 28.8C8.9 28.8 3.2 23.1 3.2 16 3.2 8.9 8.9 3.2 16 3.2S28.8 8.9 28.8 16c0 7.1-5.7 12.8-12.8 12.8z"></path>
+                        </svg>
+                      </div></a></div>
+                  <div class="gallery__thumbs--item"><a class="thumb" href="img/IMG_04.jpg" title="Jeneva apartment" data-plugin="img-to-bg" data-src="img/IMG_04.jpg">
+                      <div class="overlay">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                          <path d="M17.6 8h-3.2v6.4H8v3.2h6.4V24h3.2v-6.4H24v-3.2h-6.4V8zM16 0C7.2 0 0 7.2 0 16s7.2 16 16 16h12.8c1.8 0 3.2-1.4 3.2-3.2V16A16 16 0 0 0 16 0zm0 28.8C8.9 28.8 3.2 23.1 3.2 16 3.2 8.9 8.9 3.2 16 3.2S28.8 8.9 28.8 16c0 7.1-5.7 12.8-12.8 12.8z"></path>
+                        </svg>
+                      </div></a></div>
+                  <div class="gallery__thumbs--item"><a class="thumb" href="img/IMG_05.jpg" title="Jeneva apartment" data-plugin="img-to-bg" data-src="img/IMG_05.jpg">
+                      <div class="overlay">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                          <path d="M17.6 8h-3.2v6.4H8v3.2h6.4V24h3.2v-6.4H24v-3.2h-6.4V8zM16 0C7.2 0 0 7.2 0 16s7.2 16 16 16h12.8c1.8 0 3.2-1.4 3.2-3.2V16A16 16 0 0 0 16 0zm0 28.8C8.9 28.8 3.2 23.1 3.2 16 3.2 8.9 8.9 3.2 16 3.2S28.8 8.9 28.8 16c0 7.1-5.7 12.8-12.8 12.8z"></path>
+                        </svg>
+                      </div></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col md__6">
+              <div class="page__apartment--text">
+                <div class="text__wraper">
+                  <h2>jeneva apartment</h2>
+                  <p><strong>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</strong> The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                  <p><strong>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</strong> The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                </div>
+                <div class="book__wraper"><a class="btn blue" data-mfp-src="#request" data-mfp-type="inline"><span>BOOK</span></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page__apartment--description">
+        <div class="container">
+          <div class="description__heaader">characteristic</div>
+          <div class="description__body">
+            <div class="row">
+              <div class="col xs__6"><strong>Location</strong></div>
+              <div class="col xs__6">Belgia</div>
+            </div>
+            <div class="row">
+              <div class="col xs__6"><strong>Apartments</strong></div>
+              <div class="col xs__6">12F</div>
+            </div>
+            <div class="row">
+              <div class="col xs__6"><strong>Tip</strong></div>
+              <div class="col xs__6">2 rooms</div>
+            </div>
+            <div class="row">
+              <div class="col xs__6"><strong>Area</strong></div>
+              <div class="col xs__6"> 90 m2</div>
+            </div>
+            <div class="row">
+              <div class="col xs__6"><strong>Floor</strong></div>
+              <div class="col xs__6"> 9</div>
+            </div>
+            <div class="row">
+              <div class="col xs__6"><strong>Parking</strong></div>
+              <div class="col xs__6"> Yes</div>
+            </div>
+            <div class="row">
+              <div class="col xs__6"><strong>Terrace</strong></div>
+              <div class="col xs__6"> Yes</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="b__footer">
+      <div class="container">Copyright © Sifrena SA. All Rights Reserved.</div>
+    </footer>
+    <button class="to--top">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M20.6 14.4l-7.5-8c-.3-.2-.7-.4-1.1-.4-.4 0-.8.2-1 .5l-7.5 8c-.3.2-.5.6-.5 1s.1.8.4 1.1l.9.9c.5.6 1.4.6 2 .1l.1-.1 5.6-5.9 5.6 5.9c.3.3.6.5 1 .5s.8-.2 1.1-.5l.9-.9c.3-.3.4-.7.4-1.1 0-.4-.2-.8-.4-1.1z"></path>
+      </svg>
+    </button>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
