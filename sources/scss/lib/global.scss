@@ -269,7 +269,7 @@ a, button {
 }
 
 .to--top {
-  display: block;
+  display: none;
   position: fixed;
   right: 30px;
   bottom: 30px;
@@ -292,6 +292,18 @@ a, button {
     height: 24px;
     display: block;
     margin: 0 auto;
+  }
+
+  @include mobileOnly {
+    width: 32px;
+    height: 32px;
+    right: 15px;
+    bottom: 45px;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
   }
 }
 

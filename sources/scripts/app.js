@@ -44,7 +44,15 @@ $(document).ready(function () {
   $('[data-mfp-type=inline]').magnificPopup({
     type: 'inline',
     showCloseBtn: false,
-    closeMarkup: '<button data-mfp-close><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>',
+    fixedBgPos: true,
+    callbacks: {
+      beforeOpen: function() {
+          $('html').css('overflow', 'hidden');
+      },
+      beforeClose: function() {
+          $('html').css('overflow', 'auto');
+      }
+    }
   });
 
   $('[data-mfp-close]').click(function () {
@@ -88,6 +96,12 @@ $(document).ready(function () {
     mainClass: 'mfp-img-mobile',
     gallery: {enabled: true,navigateByImgClick: false},
     callbacks: {
+      beforeOpen: function() {
+        $('html').css('overflow', 'hidden');
+      },
+      beforeClose: function() {
+          $('html').css('overflow', 'auto');
+      },
       buildControls: function () {
         this.contentContainer.append(this.arrowLeft.add(this.arrowRight));
       },

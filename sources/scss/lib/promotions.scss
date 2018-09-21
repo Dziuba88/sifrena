@@ -1,6 +1,10 @@
 .b__main--promotions {
   padding: 40px 0 70px;
 
+  @include mobileOnly {
+    padding-bottom: 0;
+  }
+
   .promotions__list {
     background: url(../img/logo_bg_2.png) center center repeat;
     padding: 30px 0 0;

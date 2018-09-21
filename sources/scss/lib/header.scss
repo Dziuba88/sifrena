@@ -12,9 +12,7 @@
 
     a {
       display: inline-block;
-      &:hover {
-        opacity: 0.5;
-      }
+      
     }
 
     img {
@@ -121,7 +119,7 @@
 
 
       @include mobileOnly {
-        margin: 0 -30px;
+        margin: 0 -15px;
         &__item.dropdown {margin: 0;border-right:none;}
       }
     }
@@ -322,7 +320,11 @@
       @include mobileOnly {
         &__wraper {
           height: 60px;
-          margin: 0 -20px;
+          margin: 0 -15px;
+        }
+
+        &--brand {
+          padding: 0 15px;
         }
 
         &--brand a img {height: 50px;}

@@ -192,6 +192,18 @@
       &.owl-next {
         right: 15px;
       }
+
+      @include mobileOnly {
+        width: 40px;
+        height: 40px;
+        &.owl-prev {
+          left: 0px;
+        }
+  
+        &.owl-next {
+          right: 0px;
+        }
+      }
     }
   }
 
