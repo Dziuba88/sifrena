@@ -81,38 +81,50 @@ $(document).ready(function () {
     });
   };
 
-  function baseName(str) {
-    var base = new String(str).substring(str.lastIndexOf('/') + 1);
-    if (base.lastIndexOf(".") != -1)
-      base = base.substring(0, base.lastIndexOf("."));
-    return base;
+  function createGallery() {
+    var gallery = $('[data-popup=gallery]');
+    var links = gallery.find('.thumb');
+    var items = [];
+    console.log(links);
 
-    ///<span>' + baseName(item.src) +'</span>
-  }
-  $('[data-popup=gallery]').magnificPopup({
-    delegate: 'a.thumb',
-    type: 'image',
-    tLoading: 'Loading image #%curr%...',
-    mainClass: 'mfp-img-mobile',
-    gallery: {enabled: true,navigateByImgClick: false},
-    callbacks: {
-      beforeOpen: function() {
-        $('html').css('overflow', 'hidden');
-      },
-      beforeClose: function() {
+    links.each(function () {
+      var link = $(this);
+      var type = 'image';
+
+      if (link.hasClass('video')) {
+        type = 'iframe';
+      };
+      var item = {
+        src: link.attr('data-mfp-src'),
+        type: type,
+        title: link.attr('title') + '<small>Image by Sifrena</small>'
+      };
+
+      items.push(item)
+    });
+
+    links.magnificPopup({
+      mainClass: 'mfp-img-mobile',
+      gallery: { enabled: true, navigateByImgClick: false },
+      disabledOn: 0,
+      items: items,
+      callbacks: {
+        beforeOpen: function () {
+          $('html').css('overflow', 'hidden');
+        },
+        beforeClose: function () {
           $('html').css('overflow', 'auto');
-      },
-      buildControls: function () {
-        this.contentContainer.append(this.arrowLeft.add(this.arrowRight));
-      },
-    },
-    image: {
-      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-      titleSrc: function(item) {
-        return item.el.attr('title') + '<small>Image by Sifrena</small>';
+        },
+        buildControls: function () {
+          this.contentContainer.append(this.arrowLeft.add(this.arrowRight));
+        },
       }
-    }
-  });
+    });
+  };
+
+  if ($('[data-popup=gallery]').length) {
+    createGallery();
+  };
 
   $('[data-toggle="active"]').click(function () {
     $(this).toggleClass('active')
@@ -122,6 +134,5 @@ $(document).ready(function () {
     $(this).toggleClass('active');
     $('.navbar--nav').toggleClass('open');
   });
-
 
 });

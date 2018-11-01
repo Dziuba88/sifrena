@@ -428,7 +428,7 @@
 }
 
 .page__apartment {
-  padding: 60px 0;
+  padding: 60px 0 40px;
 
   &--gallery {
     .gallery__main {
@@ -442,6 +442,7 @@
         left: 0;
         width: 100%;
         height: 100%;
+        cursor: pointer;
       }
 
       &--footer {
@@ -502,12 +503,13 @@
     }
     .gallery__thumbs {
       display: flex;
+      flex-wrap: wrap;
       margin: 0 -10px;
 
       &--item {
         display: block;
-        flex: 1;
-        padding: 0 10px;
+        width: 25%;
+        padding: 0 10px 20px;
         box-sizing: border-box;
 
         .thumb {
@@ -515,6 +517,7 @@
           height: 0;
           display: block;
           padding-top: 100%;
+          cursor: pointer;
         }
 
       }
@@ -560,6 +563,8 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    padding-bottom: 20px;
+    box-sizing: border-box;
 
     .text__wraper {
       flex: 1;
